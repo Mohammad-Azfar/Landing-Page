@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  background-color: beige;
+  background-image: url(images/assets/image-header.jpg);
+  height: 95vh;
+  min-height: 500px;
+  width: 100%;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+.menu span {
+  margin-right: 30px;
+  transition: all 0.25s;
+}
+
+.contact {
+  background-color: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bolder;
+  transition: all 0.25s ease-in-out;
+}
+
+.menu span:hover {
+  color: rgba(168, 8, 96, 0.815);
+}
+
+.contact:hover {
+  background-color: rgba(168, 8, 96, 0.815);
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0.5;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.text {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.arrow {
+  /* width: 50px; */
+  margin-top: 60px;
+}
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  height: 550px;
+}
+.left,
+.right {
+  flex: 1;
+}
+
+.section1 img,
+.section2 img,
+.section3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.section1 .left h1,
+.section2 .left h1,
+.section3 .left h1,
+.section3 .right h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.section1 .left p,
+.section2 .left p,
+.section3 .left p,
+.section3 .right p {
+  color: gray;
+  text-align: justify;
+  line-height: 1.3;
+}
+.section1 .text-container,
+.section2 .text-container {
+  width: 70%;
+}
+.section1 .left,
+.section2 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .section3 .left {
+  background-image: url("challenge-sunnyside-landing-page-main/assets/image-graphic-design.jpg");
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+} */
+
+.learn-more {
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(252, 242, 242, 0.774);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonials h1 {
+  color: rgb(112, 101, 101);
+  font-size: 30px;
+
+  margin-bottom: 40px;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.3;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.client p {
+  text-align: center;
+  color: gray;
+  line-height: 1.3;
+}
+.client img {
+  margin-bottom: 35px;
+}
+.client .details {
+  margin-top: 35px;
+  text-align: center;
+  word-spacing: 5px;
+}
+
+.section5 {
+  display: flex;
+}
+.section5 .image-container {
+  flex: 0.25;
+}
+.section5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer .logo {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.footer-menu span {
+  margin-left: 30px;
+  color: #158b72dc;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.footer-menu span:hover {
+  color: #053329;
+}
+.social-media {
+  display: flex;
+}
+
+.social-media .icon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu span {
+    display: none;
+  }
+  .main {
+    margin-top: 60px;
+    flex-grow: 0.25;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section1,
+  .section2,
+  .section3 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section1 {
+    flex-direction: column-reverse;
+  }
+
+  .section1 .left,
+  .section2 .left {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .clients {
+    flex-direction: column;
+  }
+  .client {
+    padding-bottom: 70px;
+  }
+  .client p {
+    text-align: center;
+  }
+  .section5 {
+    flex-wrap: wrap;
+  }
+  .section5 .image-container {
+    flex: 0.5;
+    flex-basis: 50%;
+  }
+
+  .footer .logo {
+    height: 40px;
+  }
+
+  .footer-menu span {
+    margin: 40px;
+    font-size: larger;
+  }
+}
+
+/* .section3 .left h1 {
+  color: #24554a;
+  font-weight: bold;
+  font-size: 28px;
+}
+.section3 .left p {
+  color: #24554a;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+} */
